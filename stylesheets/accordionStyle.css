@@ -1,0 +1,85 @@
+.accordion {
+	width:90%;
+	overflow: hidden;
+	margin: 10px auto;
+	color: #474747;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.accordion section {
+	float: left;
+	overflow: hidden;
+	color: #333;
+	cursor: pointer;
+	background: #333;
+	margin: 3px;
+}
+
+.accordion section:hover {
+	background: #444;
+}
+
+.accordion section article {
+	display:none;
+}
+
+.accordion section:after {
+	position:relative;
+	font-size: 24px;
+	color:#000;
+	font-weight: bold;
+}
+
+.accordion section:target {
+	background: #FFF;
+	padding: 10px;
+}
+
+.accordion section:target:hover {
+	background: #FFF;
+}
+
+.accordion section:target h3 {
+	width: 100%;
+}
+
+.accordion section:target h3 a {
+	color:#434343;
+	padding: 0;
+}
+
+.accordion section:target article {
+	display: block;
+}
+
+.accordion section h3 {
+	margin: 0 auto;
+}
+
+.accordion section h3 a {
+	color:#EEE;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 22px;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 8px 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.vertical section {
+	width:100%;
+	height:40px;
+	-webkit-transition: height 0.75s ease-out;
+	   -moz-transition: height 0.75s ease-out;
+		-ms-transition: height 0.75s ease-out;
+		 -o-transition: height 0.75s ease-out;
+			transition: height 0.75s ease-out;
+}
+
+/*Altura de la caja deslizable*/
+.vertical :target {
+	height: 340px;
+	width: 97%;
+}

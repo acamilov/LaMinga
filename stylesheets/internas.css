@@ -1,0 +1,57 @@
+
+#intro{
+	height:460px !important;
+}
+
+#intro .bg1 {
+	height:460px !important;
+	background: url(../images/bg12.jpg) 0 0 repeat fixed !important;	
+}
+
+#line{
+	width:940px;
+	border-top:1px solid #999;
+	float:left;
+	height:2px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#intro .ecoturismo {
+	background: url(../images/bg13.jpg) 0 0 repeat fixed !important;	
+}
+
+#intro .hospedaje {
+	background: url(../images/bg14.jpg) 0 0 repeat fixed !important;	
+}
+#intro .cronograma{
+	background: url(../images/bg15.jpg) 0 0 repeat fixed !important;	
+}
+
+#cronograma {
+	margin: 0 auto;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+#cronograma table {
+	margin: 0 auto;
+}
+
+#cronograma table tr {
+	margin: 5px 5px 5px 5px;
+	vertical-align: middle;
+}
+
+#cronograma table td {
+	padding: 0px 5px 0px 5px;
+	vertical-align: middle;
+}
+
+#cronograma table thead {
+	border-top: thin solid #000;
+	border-bottom: thin solid #000;
+	font-family: 'Oswald', sans-serif;
+	padding-top-top: 20px;
+	padding-bottom: 20px;
+}

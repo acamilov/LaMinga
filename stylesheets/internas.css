@@ -55,3 +55,8 @@
 	padding-top-top: 20px;
 	padding-bottom: 20px;
 }
+
+.tachado
+{
+	text-decoration: line-through;
+}

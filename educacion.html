@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>La Minga Casa Gestante</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/flexslider.css">
+	<link rel="stylesheet" href="stylesheets/prettyPhoto.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+   	<link rel="stylesheet" href="stylesheets/internas.css">
+	
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.25)'
+						}
+					}
+				}
+			});
+
+	
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+		body {
+			margin: 0 auto;
+		}
+	</style>
+
+
+
+
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+	
+	<div id="intro">
+	
+		<div class="bg1"></div>
+		
+		<div class="title">
+			<div class="intro-line"></div>
+			<h1>la minga</h1>
+			<h1 class="small2">Centro de ampliación de conciencia</h1>
+			<div class="intro-line"></div>
+			<div class="social-intro">
+				<ul>
+				</ul>
+			</div>
+		</div> <!-- end title -->
+	</div> <!-- end intro -->
+	
+	
+	<nav>
+		<ul>
+			<li><a href="index.html#intro">Home</a></li>
+			<li><a href="index.html#nosotros">Nosotros</a></li>
+			<li><a href="index.html#work">Servicios</a></li>
+			<li><a href="index.html#services">Como llegar</a></li>
+			<li><a href="index.html#about">Galeria</a></li>
+			<li><a href="index.html#contact">Contacto</a></li>
+		</ul>
+		
+		<select name="dropdpown" size="1" onChange="scrollTo(this.value)">
+			<option value="" selected="selected">Menu</option>
+			<option value="index.html#intro">HOME</option>
+            <option value="index.html#nosotros">NOSOTROS</option>
+			<option value="index.html#work">SERVICIOS</option>
+			<option value="index.html#services">COMO LLEGAR</option> 
+			<option value="index.html#about">GALERIA</option> 
+			<option value="index.html#contact">CONTACTO</option> 
+		</select>
+	</nav>
+	
+	<div id="work2">
+		<div class="container">
+		
+        <div class="sixteen columns">
+				<h2><span class="lines">Talleres y Conferencias</span></h2>
+		  </div> <!-- end sixteen columns -->
+          
+            <div class="sixteen columns">
+				<p style="text-align:center;">
+                En la Minga compartimos conocimiento y sensibilizamos a nuestros visitantes con el cuidado del medio ambiente, los contagiamos de energía positiva y mostramos el valor a los activos ocultos, a través del contacto directo con la tierra, cultivos orgánicos, bio-construcción, sostenibilidad ambiental, reciclaje y manejo de residuos, dando a conocer un estilo de vida sano e inteligente. 
+                              <br/><br/>
+                <br/><br/><br/></p>
+					</div> 
+			<div class="nine columns">
+          <img src="images/conferencias.jpg">
+          </div>
+          
+           <div class="seven columns">
+           <h3>Temas de la conferencias:</h3>
+                <ol>
+                  <li>Innovación</li>
+                  <li>Empoderamiento</li>
+                  <li>Competitividad </li>
+                  <li>Productividad </li>
+                  <li>Confianza </li>
+                  <li>Liderazgo, </li>
+                  <li>Comunicaciones</li>
+                  <li>Trabajo en  equipo</li>
+                </ol>
+                </div>
+                			<!--Begin Agricultura Regenerativa-->
+    						<div class="sixteen columns"></div>
+							<div id="line"></div>
+							<div class="sixteen columns">
+                            	<h3 style="text-align:center;"><br/>AGRICULTURA REGENERATIVA</h3>
+                            </div>
+
+                            <div class="nine colums"><br/>
+                            	<p style="text-align:center;"><strong>Suelos Sanos, Plantas Sanas, Personas Felices<br/><br/></p></strong>
+                            	<img src="images/AgriculturaRegenerativaWeb.jpg">
+                            	<strong>
+                            		<br/><br/>
+                            		¡Celebra con nosotros el Solsticio!
+                            	</strong>
+                            	<br/><br/>
+                            	En el curso de agricultura regenerativa aprenderás a aprovechar mejor los espacios pequeños para la siembra de diversos cultivos, todo esto buscando la regeneración de suelos, el manejo de cultivos BioIntensivos y la creación de compost y abonos orgánicos.
+                            	<br/>
+                        		Incluye materiales, hospedaje, alimentación, y certificado.
+                        		<br/><br/>
+                        		<iframe width="560" height="315" src="http://www.youtube.com/embed/MZr8cZFoXMs?rel=0" frameborder="0" allowfullscreen></iframe>
+                        		<br /><br />
+                        		<strong>
+	                        		Inversión: $220,000<br/>
+	                        		Fecha: 21 al 23 de Junio de 2014<br />
+	                        		Hora de Llegada: 6:00 pm<br />
+	                        		<br />
+                            	</strong>
+
+                            	<br/><br/>
+                            </strong>
+                            <A href="cronograma.html"><div class="button2">PRÓXIMO TALLER E INSCRIPCIONES</div></A>
+                        	</div>
+							<!--End Agricultura Regenerativa-->
+
+
+							<!--Begin PDC-->
+                            <div class="sixteen columns">
+	                            <div id="line"></div>
+	                            <h3 style="text-align:center;"><br/>Curso Diseño de Permacultura</h3>
+	                        </div>
+
+	                            <div class="nine colums"><br/>
+	                            	<p style="text-align:center;"><strong>Aprendiendo a ver de nuevo. Recordando el diseño natural.<br/><br/></p></strong>
+	                            	<img src="images/PDCdescuento.jpg" height="300" width="940">
+	                            	<strong>
+	                            		<br/><br/>
+	                            		Junio 14-28 de 2014<br/>
+	                            	</strong>
+	                            	Si ud quiere construir comunidad, construir país y tener una mirada diferente a lo que nos han enseñado, sabiendo que estamos en un mundo finito y que estamos acabando con los recursos, lea esto. <br />
+									El PDC es un Curso de Diseño Certificado en Permacultura creado por Bill Mollison, creador de la Permacultura en Australia.  Permacultura es la cultura que permanece.  Es un estilo de vida que yo practico y que practicamos en La Minga.<br />
+									Mollison, un ecólogo, Profesor de la Universidad de Tasmania, desarrolló una metodología de diseño basada en el conocimiento de los indígenas.  La flor permacultural es la estructura metodología basada en 7 pilares: agricultura, bioconstrucción, herramientas apropiadas, educación, salud y espiritualidad, economía y finanzas y gobernanza del territorio.<br />
+									Es un curso de 15 días intensivos para que las personas interesadas en sostenibilidad, innovación social, construcción comunitaria puedan aprender técnicas y metodologias para construir un futuro mas equilibrado. <br /> 
+									Se dictará del 14 al 28 de Junio en La Minga Centro de Ampliación de Conciencia. Tendremos pantalla Gigante para los permacultores aficionados al fútbol. Con gastronomía suculenta y saludable, en un lugar paradisiaco, esta es la mejor forma de invertir una quincena. Amerita pedir vacaciones si está trabajando!  Las familias son bienvenidas!<br />
+									Los facilitadores, <a href="http://elmanzano.org">Ecoescuela El Manzano</a> y <a href="https://twitter.com/bioconstruyendo">@Biocontruyendo</a> son los encargados del curso.<br />
+									El curso no tiene prerequisitos.<br />
+									El modelo es replicable en todo el planeta.<br />
+									Te enseña a trabajar en comunidad, a transformar los problemas en oportunidades, a que cada elemento tienta varias funciones !
+	                            	<br/><br/>
+	                            	El valor del taller incluye: <br/>
+	                            	- Certificado internacional otorgado por La Ecoescuela el Manzano de Chile, BioConstruyendo el Bolson de Argentina y La Minga<br/>
+	                            	- Materiales del curso<br/>
+	                            	- Alojamiento durante los dias del evento<br/>
+	                            	- Alimentación ovolactovegetariana<br/><br/>
+	                            	<strong>
+	                            		Inversión: $1'400,000. Ahora con 25% de descuento para Estudiantes, Innovadores sociales, emprendedores, maestros, parejas y grupos (Curso a $1'0050.000).<br/>
+										Pago anticipado abonando el 50%<br/>
+										Tambien puedes realizar el pago <a href="http://www.biciq.com/events/curso-diseno-de-permacultura">aqui</a>
+										Encuentras la información en detalle del curso <a href="pdf/PDCLaMinga.pdf">haciendo clic aqui.</a>
+	                            		<br /><br />
+	                            		Mas Información:
+	                            		<ol>
+	                            			<li><a href="http://issuu.com/juangarango/docs/pdc_copia">Presentacion PDC</a></li>
+	                            			<li><a href="https://www.facebook.com/events/1416462988605543/?fref=ts">Link del evento en Facebook</a></li>
+	                            			<li>Videos:
+	                            			<ul>
+	                            				<li><a href="https://www.youtube.com/watch?v=qIEEQuM9yU8">Video 1</a></li>
+	                            				<li><a href="https://www.youtube.com/watch?v=Lifcxf9APrQ">Video 2</a></li>
+	                            				<li><a href="https://www.youtube.com/watch?v=YNJ451XjQls">Video 3</a></li>
+	                            			</ul>
+	                            			</li>
+	                            			<li>
+	                            			Paginas Web:
+	                            				<ul>
+	                            					<li><a href="http://elmanzano.org">El Manzano</a></li>
+	                            					<li><a href="http://bioconstruyendo.org">BioConstruyendo</a></li>
+	                            					<li><a href="http://permaculturenews.org">Permaculture Research Institute PRI</a></li>
+	                            				</ul>
+	                            			</li>
+	                            		</ol>
+	                            	</strong>
+	                            	<A href="https://docs.google.com/forms/d/1_DTEkvv4pAYpWuLoHYlNMDWgNUxcjiou6D0qi93EKCI/viewform" target="_blank"><div class="button2">INSCRIPCIONES AL TALLER</div></A>
+                            </div>
+                            <!--End PDC-->
+							
+							<!--Begin Taller Bioconstrucción-->
+    						<div class="sixteen columns"></div>
+							<div id="line"></div>
+							<div class="sixteen columns">
+                            	<h3 style="text-align:center;"><br/>TALLER DE BIOCONSTRUCCION:</h3>
+                            </div>
+
+                            <div class="nine colums"><br/>
+                            	<p style="text-align:center;"><strong>Curso práctico de técnicas de construcción ambientalmente sostenibles. <br/><br/></p></strong>
+                            	<img src="images/bio.jpg">
+                            	<strong>
+                            		<br/><br/>
+                            		¿Qué tienen en común Barichara, Villa de Leyva, Mompox, la Candelaria y la Ciudad Amurallada de Cartagena? Todas tienen casas fabricadas con tierra. 2,000,000,000 personas viven o trabajan en construcciones de tierra.</strong>
+                            		<br/><br/>
+                            		La Minga es la primera construcción en tierra en Choachi en 70 años. 
+                            		<br/><br/>
+                            		Los participantes aprenderán:
+                            		<br/>
+                            		-	A hacer un muro de tapia pisada<br/>
+                            		-	A fabricar adobes<br/>
+                            		-	A crear un muro de bahareque (técnica indígena)<br/>
+                            		-	Cimientos<br/>
+                            		-	Niveles<br/>
+                            		-	Revoques<br/><br/>
+
+                            		El grupo construirá una estructura que permanecerá en La Minga. 
+                            		<br/>
+                            		Incluye materiales, 2 noches de hospedaje, comidas, y certificado.
+                            		<br/><br/><strong>
+                            		Inversión: $250,000
+                            		<br/>Proxima fecha: 16 a 18 de Mayo de 2014
+                            		<br />
+                            		Cupo máximo 15 personas.  
+                            	</strong>
+
+                            	<br/><br/>
+                            </strong>
+                            <A href="cronograma.html"><div class="button2">PRÓXIMO TALLER E INSCRIPCIONES</div></A>
+                        	</div>
+							<!--End Taller Bioconstrucción-->
+
+							<!--Begin Taller Cocina Consciente-->
+                            <div class="sixteen columns">
+                            	<div id="line"></div>
+                            	<h3 style="text-align:center;"><br/>Taller de Cocina conciente:</h3>
+                            </div>
+
+                            <div class="nine colums"><br/>
+                            	<p style="text-align:center;"><strong>"Que la comida sea tu alimento y el alimento tu medicina." Hipócrates<br/><br/></p></strong>
+                            	<img src="images/cocina.jpg" height="300" width="940">
+                            	<strong>
+                            		<br/><br/>
+                            		Duración del taller: Dos días<br/>
+                            	</strong>
+                            	Este taller práctico une tres elementos que hacen sinergia - El talento de Gelen Campos, la hermosa cocina  de La Minga y la huerta con sus 54 productos orgánicos.  
+                            	<br/><br/>
+                            	El taller incluye: <br/>
+                            	- Cosecha de materias primas cultivadas y silvestres <br/>
+                            	- Elaboración de salsas con los 4 elementos de la tierra <br/>
+                            	- Preparación de alimentos ancestrales quinua, guatila, yacón, balú <br/>
+                            	- Preparacion de pan con cereales <br/>
+                            	- Fabricación de Yougurt natural <br/>
+                            	- Elaboración y montaje de un plato gourmet <br/>
+                            	- Preparación de vinagretas para ensaladas.   <br/><br/>
+
+                            	Cada participante se llevará su frasco de salsa de gulupa, su garrafa de yougurt y su pan de cereales.  <br/><br/>
+                            	<strong>
+                            		Inversión: $250,000 incluye materiales, alimentación, hospedaje<br/>
+
+                            		Cupo 10 personas<br/>
+                            		Proxima fecha: 31 de Mayo, 1ro de Junio
+                            		<br />
+                            		Para que guardes la información en PDF <a href="pdf/ICursodeCocinaConscienteenLaMinga.pdf">haz clic aqui.</a>
+                            		<br /><br />
+                            	</strong>
+                            	<A href="cronograma.html"><div class="button2">PRÓXIMO TALLER E INSCRIPCIONES</div></A>
+                            </div>
+							<!--End Taller Cocina Consciente-->
+                            							
+						<div id="line"></div>
+							
+							<!--Begin El Yoga de las Plantas-->
+							<div class="sixteen columns">	
+                            	<h3 style="text-align:center;"><br/>El Yoga de las plantas</h3>
+                            </div>
+
+                            <div class="nine colums"><br/>
+                            	<p style="text-align:center;"><strong>Herramientas Interiores para el retorno a la tierra<br/><br/></p></strong>
+                            	<img src="images/plantasyoga.jpg" height="300" width="940">
+                            	<strong>
+                            		<br/><br/>
+                            		5 y 6 de Abril<br/>
+                            	</strong>
+                            	Re-descubriendo nuestro vínculo profundo con las plantas, arraigándonos al territorio, escuchando al cuerpo, creando nuestro bienestar. 
+                            	<br/><br/>
+                            	Exploraremos<br/>
+                            		- Herramientas para activar nuestra intuición y obtener información de la naturaleza para nuestro bienestar y el de la tierra<br />
+									- Las plantas silvestres comestibles locales y su uso nutritivo y medicinal.<br />
+									- Métodos de acercamiento e investigación al potencial de las plantas silvestres.<br />
+									- Técnicas de recolección y transformación de las plantas<br />
+									- Las implicaciones de este re-conocimiento en la transformación de la manera como nos relacionamos con nosotros mismos, el alimento y la tierra.<br /><br />
+                            	<strong>
+                            		Facilitado por:<br />
+                            	</strong>
+									- Felipe Medina, investigador de sistemas sostenibles, procesos comunitarios, ecología profunda y el <br />lugar donde los tres campos se encuentran.<br />
+									- Mayu Camargo, ecóloga y amante de las plantas, integradora de la medicina, el campo, la educación y el <br />arte en proyectos comerciales sostenibles.<br />
+									<strong>Lugar:</strong> La Minga, Choachi<br />
+									<strong>Fecha:</strong> Pendiente de Programación<br />
+									<strong>Hora de llegada:</strong> 9 am<br />
+									<strong>Finalización:</strong> 4 pm<br />
+									<strong>Inversión:</strong> $190.000 - Incluye hospedaje y alimentación gourmet vegetariana con productos de la huerta.<br />
+									Niños Bienvenidos<br />
+									<!-- <strong>Cupos Limitados, favor confirmar la asistencia antes del 1ro de abril.</strong><br /> -->
+									<br />
+									Preguntas y confirmación a <a href="mailto:filpes00@hotmail.com">filpes00@hotmail.com</a> / 310 7696119<br /><br />
+                            	
+                            	<A href="cronograma.html"><div class="button2">PRÓXIMO TALLER E INSCRIPCIONES</div></A>
+                            </div>
+							<!--End El Yoga de las Plantas-->
+                        <div id="line"></div>
+                        	<!--Begin Taller de Innovación-->
+							<div class="sixteen columns">	
+                            	<h3 style="text-align:center;"><br/>Innovación Pura</h3>
+                            </div>
+
+                            <div class="nine colums"><br/>
+                            	<p style="text-align:center;"><strong>Ponga a volar sus ideas, creer crea realidades.<br/><br/></p></strong>
+                            	<img src="images/tallerinnovacion.jpg" height="300" width="940">
+<!--                             	<strong>
+                            		<br/><br/>
+                            		5 y 6 de Abril<br/>
+                            	</strong> -->
+                            	 Este taller practico une <em>Tres Elementos</em> que hacen sinergia. <em>El Contexto</em> La Minga con una quebrada y 6 cascadas, con el Bosque encantado, el Camino Real, La Naturaleza Vibrante que inspira ideas, metáforas y soluciones; Las <em>Ideas</em> sobre innovación, biomimesis, construccion colectiva y flujo; la <em>Experiencia</em> de Pedro Medina con 20 años en cargos gerenciales, 18 años en docencia y 15 años como emprendedor social.<br /><br /> 
+                            	<strong>
+                            		Facilitado por:<br />
+                            	</strong>
+									<strong>Pedro Medina</strong>
+									<br />
+									Presidente<br />
+									Yo Creo En Colombia<br />
+									<strong>Lugar:</strong> La Minga, Choachi<br />
+									<!-- <strong>Fecha:</strong> 5 y 6 de Abril<br />
+									<strong>Hora de llegada:</strong> 9 am<br />
+									<strong>Finalización:</strong> 4 pm<br /> -->
+									<strong>Inversión:</strong> $250.000 - Incluye curso, hospedaje y alimentación gourmet con productos de la huerta.<br />
+									Niños Bienvenidos<br />
+									10% de descuento 15 dias antes<br />
+									20% de descuento 30 dias antes<br />
+									<!-- <strong>Cupos Limitados, favor confirmar la asistencia antes del 1ro de abril.</strong><br />
+									<br /> -->
+									<br /><br />
+                            	
+                            	<A href="cronograma.html"><div class="button2">PRÓXIMO TALLER E INSCRIPCIONES</div></A>
+                            </div>	
+							<!--End Taller de Innovación-->
+                        <div class="sixteen columns"></div>      
+			<div id="line"></div>
+            <div class="sixteen columns">
+      					
+						
+
+
+				<h3 style="text-align:center;" ><br/>Qué dicen algunos de los que han tomado el curso:</h3>
+			</div> <!-- end sixteen columns -->
+			
+			<div class="sixteen columns">
+				<p><br/><br/>Se lleva uno una filosofía muy importante en la que las personas de mi edad no están acostumbradas. Me encuentro con que no estoy retrocediendo volviendo a mis raíces.<br/>
+<strong>René, Médico Cirujano</strong>
+<br/></p>
+<p>Aquí experimenté creación de conocimiento. Tenía una roca en la cabeza que se me abrió. Normalmente uso máquinas y concreto. Aquí usamos un material que está vivo.  Con esto podemos edificar el país, las viviendas que se necesitan. <br/>
+<strong>David, estudiante de Ingeniería Civil de la Universidad Nacional</strong>
+<br/></p>
+
+<p>Clavé mi primera puntilla, aprendí a usar el taladro.  Fue muy práctico.  estoy aburrida de tanta teoría.  Me encantó la buena comida que preparó Gelen y que uno duerme en un sitio caliente y bueno. El grupo fue muy rico, la compincheria, la solidaridad.  Diego es muy buen maestro - mucha paciencia, claridad y ritmo.<br/>
+<strong>Carolina, Profesora de Antropología Universidad Javeriana</strong>
+<br/></p>
+
+<p>Nosotros nos llevamos saberes para construir nuestra casa.  Vinimos desde Sasaima para aprender eso.  El grupo me pareció muy interesante.<br/>
+<strong>Andrés, Gestor social</strong>
+<br/></p>
+
+
+<p>Si es verdad y si se puede.  Son excelentes técnicas - el hacer los ladrillos y la tapia y verlo ya aplicado en La Minga es extraordinario.  En medio de una rumba con unos amigos uno puede hacer una casa.  Es fácil y bacano. Aprovechar los materiales del territorio.  Me encantó ver como ha florecido el proyecto de La Minga.  Cada quién pone de su parte.  El corazón de este lugar es hermoso.  Celebrando juntos.<br/>
+<strong>Sofia, Gestora Social</strong>
+<br/></p>
+
+
+
+			</div> 
+			
+		</div>	
+            				<div class="copyright">
+					<div style="text-align:center; color:#FFF; opacity: 1;"><p>La Minga Choachí - Cundinamarca  -Colombia</br> Cel: (57) 314 492 04 80 e-mail: laminga2013@gmail.com </p><p> Specially made by:</p> <a href="http://antorchaweb.com" target="_blank"><img src="http://minga.yocreoencolombia.com/images/logo_antorcha_blanco.png"></a></div>
+				</div>
+			</div>
+		</div> <!-- end container -->
+		
+	<!-- JS
+	================================================== -->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="javascripts/jquery.sticky.js" type="text/javascript"></script>
+	<script src="javascripts/nbw-parallax.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.inview.js" type="text/javascript"></script>
+	<script src="javascripts/smooth-scroll.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="contact-form.js"></script>
+	
+	<!-- Contact Form
+	================================================== -->
+	<script src="cfg-contactform-4/js/contactform.js"></script>
+	<link href="cfg-contactform-4/css/contactform.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Sticky nav -->
+	<script>
+		$(document).ready(function(){
+			$("nav").sticky({topSpacing:0});
+		});
+	</script>
+	
+	
+	<!-- dropdown menu -->
+	<script type="text/javascript">
+    	function scrollTo(target){
+        	var targetPosition = $(target).offset().top;
+        	$('html,body').animate({ scrollTop: targetPosition}, 'slow');
+        }
+    </script>
+	
+	
+	
+	<!-- slider -->
+	<script>
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				slideshow: false,
+				slideshowSpeed: 4500,
+				animationSpeed: 1000
+			});
+		});
+	</script>
+	
+	<!-- pretty photo 
+	<script>
+		$(document).ready(function(){
+			$("a[class^='prettyPhoto']").prettyPhoto({
+				social_tools: false,
+				theme: 'light_square'
+			});
+		});
+	</script>
+	-->
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				social_tools: false,
+				theme: 'light_square'
+			});
+		});
+	</script>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
